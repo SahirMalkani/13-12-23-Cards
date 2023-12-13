@@ -88,10 +88,13 @@ const {title,price,description,image_url}=obb[i]
         />
         <div class="card-body">
           <h5 class="card-title">${title}</h5>
+          <h5 class="card-title">Price: ${price}</h5>
+          
+          
           <p class="card-text">
             ${description}
           </p>
-          <a href="#" class="btn btn-primary" onclick=(cart(${price}))>Add to Cart</a>
+          <a href="pg${i}.html" class="btn btn-primary">Add to Cart</a>
         </div>
       </div>
   `;
